@@ -29,12 +29,9 @@
   }
   
   p {
-    background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 4px;
     font-size: 18px;
     line-height: 1.5;
-    text-align: left;
+   
   }
   
   .navigation-links {
@@ -76,14 +73,7 @@
     box-shadow: var(--box-shadow);
     color: white;
   }
-  .about-paragraphs {
-    display: flex;
-    margin: 30px 0;
-  }
-  
-  .about-paragraphs p {
-    margin: 10px;
-  }
+
   
   .email-link {
     display: flex;
@@ -96,4 +86,30 @@
   .email-link:hover {
     text-decoration: underline;
   }
-  
+
+  @media (max-width: 576px){
+.large-photo  {
+    display:none;
+}
+p {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    display:block;
+    text-align:center;
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+.primary-link{
+    text-align:center;
+    display:block;
+}
+.email-link {
+    font-size:20px;
+}
+}
